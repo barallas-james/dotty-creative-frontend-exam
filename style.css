@@ -1,0 +1,376 @@
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+nav{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	transition: 0.3s;
+	background-color: black;
+	z-index: 1
+}
+
+nav .logo a{
+	text-decoration: none;
+	margin: 17px 0;
+	padding: 12px 30px;
+	border-radius: 6px;
+	float: right;
+	text-transform: uppercase;
+	transition: 0.3s;
+	color: white;
+	background-color: gray;
+}
+
+nav ul{
+	list-style: none;
+	float: left;
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a{
+	line-height: 80px;
+	color: white;
+	padding: 12px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+
+.banner{
+	width: 100%;
+	height: 100vh;
+	background: url("images/background.jpg");
+}
+
+.banner .title{
+	color: rgb(0,0,0,0.9);
+	text-align: center;
+	max-width:50%;
+	padding: 40px;
+	position: absolute;
+	top: 35%;
+	border-radius: 12px;
+	text-transform: uppercase;
+}
+
+.banner .title h1{
+	font-size: 90px;
+}
+
+.banner .title h2{
+	font-size: 40px;
+}
+
+.content{
+	max-width: 1200px;
+	margin: 80px auto;
+	
+}
+
+body{
+	background-color: rgb(138, 140, 135, 0.3);
+}
+
+
+.fixed-side-navbar{
+	 position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 99999;
+  margin-top: -100px;
+  text-align: right;
+  padding: 30px 10px;
+  transition: all .3s;
+}
+
+.nav li{
+	list-style: none;
+}
+
+.nav a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+.back-aud, .solution, .res-eff, .slide{
+	height: 100vh;
+	border-radius: 8px;
+}
+
+.back-aud{
+	background-color: rgb(219, 178, 128, 0.9);
+}
+
+.solution{
+	background-color: rgb(225, 222, 127, 0.9);
+}
+
+.res-eff{
+	background-color: rgb(119, 111, 73, 0.9);
+}
+
+.slide{
+	background-color: rgb(210, 162, 98, 0.9);
+}
+
+.center{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+
+
+
+.back-aud .title, .desc{
+	padding: 20px;
+}
+
+.back-aud .title{
+	width: 50%;
+	float: left;
+	text-align: left;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.back-aud .title h1{
+	font-size: 80px;
+}
+
+.back-aud .title h2{
+	font-size: 40px;	
+}
+
+.back-aud .desc{
+	width: 50%;
+	float: right;
+	position: relative;
+}
+
+.back-aud .desc h1{
+	font-size: 60px;
+}
+
+.back-aud .desc p{
+	font-size: 20px;	
+}
+
+
+
+
+
+.solution{
+	position: relative;
+}
+
+.solution h1{
+	font-size: 60px;
+	text-align: center;
+}
+
+.solution p, h2{
+	margin: 10px 0;
+}
+
+.solution .left, .right{
+	padding: 40px;
+}
+
+.solution .left{
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+.solution .right{
+	width: 50%;
+	float: right;
+	position: relative;
+}
+
+.solution .left, .right p {
+	font-size: 20px;
+}
+
+
+
+
+.res-eff{
+	position: relative;
+}
+
+.res-eff h1{
+	font-size: 60px;
+	text-align: center;
+}
+
+.solution p, h2{
+	margin: 10px 0;
+}
+
+.res-eff .left, .right{
+	padding: 40px;
+}
+
+.res-eff .left{
+	width: 60%;
+	float: left;
+	position: relative;
+}
+
+.res-eff .right{
+	width: 40%;
+	float: right;
+	position: relative;
+}
+
+.res-eff .left, .right p {
+	font-size: 20px;
+}
+
+
+
+.buttons a{
+	min-width: 100px;
+	background-color: rgb(219, 178, 128,1);
+	border-radius: 8px;
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.buttons a:hover{
+
+	background-color: rgb( 225, 222, 127,1);
+	
+}
+
+
+.buttons {
+	text-align: center;
+	margin-bottom: 50px; 
+}
+
+.view{
+	display: none;
+	transition: 0.3s;
+}
+
+.selected{
+	display: block;
+	transition: 0.3s;
+}
+
+
+.active{
+  background-color: gray;
+  border-radius: 8px;
+}
+
+
+
+@media only screen and (max-width: 1188px) {
+		nav, .fixed-side-navbar{
+		display: none;
+	}
+
+	.banner .title{
+		text-align: center;
+		max-width: 80%;
+		padding: 0px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%); /*x and y values*/  
+		border-radius: 12px;
+	}
+
+	
+
+	.banner .title h1{
+		font-size: 35px;
+	}
+
+	.banner .title h2{
+		font-size: 20px;
+	}
+
+	.res-eff .left{
+		width: 100%;
+		float: left;
+		position: static;
+	}
+
+	.res-eff .right{
+		width: 100%;
+		float: right;
+		position: static;
+	}
+
+	.solution .left{
+		width: 100%;
+		float: left;
+		position: static;
+	}
+
+	.solution .right{
+		width: 100%;
+		float: right;
+		position: static;
+	}
+
+	.back-aud .desc{
+		width: 100%;
+		float: right;
+		position: static;
+	}
+
+	.back-aud .title{
+		width: 100%;
+		float: left;
+		text-align: left;
+		text-transform: uppercase;
+		position: static;
+	}
+
+	.back-aud .center{
+		position:static; 
+		top: 50%;
+		-ms-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+
+	.back-aud .title h1{
+		font-size: 30px;
+	}
+	.back-aud .desc h2{
+		font-size: 20px;
+	}
+
+	div {
+
+  		overflow: scroll;
+	}
+}
